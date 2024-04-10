@@ -1,0 +1,44 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/*Header Styling*/
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.875rem 0;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li {
+    margin: 0 1.25rem;
+}
+
+/*Changing link color on hover*/
+li:hover a {
+    color: darkred;
+    cursor: pointer;
+}
+
+/*Styling for hyperlinks*/
+a {
+    text-decoration: none;
+    color: rgb(249, 12, 12);
+}
+
+header img {
+    margin-top: .8125rem;
+}
