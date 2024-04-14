@@ -1,45 +1,66 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-UK">
 <head>
-    <title>O'zing qil!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:not(thead)</title>
     <style type="text/css">
-        table,
-        td {
-            border: 2px dotted #020202da;
-            /* cell spacing */
-            border-spacing: 2.25rem;
+        table{
+            background-color: #04ca88;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: left;
+            font-weight: 800;
         }
 
-        td {
-            /* cell padding */
-            padding: .825rem;
+        tr, td, th td:not(thead) {
+            border: .125rem dashed #c1f0e1;
+            padding: .625rem;
+        }
+
+        thead th {
+            color: #04ca88;
         }
     </style>
 </head>
-
 <body>
     <table>
         <thead>
-            <tr>
-                <th> First Name </th>
-                <th> Last Name </th>
-                <th> Nationality </th>
-            </tr>
+            <th>Table 1</th>
+            <th>Table 2</th>
+            <th>Table 3</th>
+            <th>Table 4</th>
+            <th>Table 5</th>
+            <th>Table 6</th>
+            <th>Table 7</th>
+            <th>Table 8</th>
+            <th>Table 9</th>
+            <th>Table 10</th>
+            <th>Table 11</th>
+            <th>Table 12</th>
         </thead>
+
         <tbody>
             <tr>
-                <td> John </td>
-                <td> Doe </td>
-                <td> American </td>
+                <td colspan="4">1-qator, 1/2/3/4-ustun</td>
+                <td colspan="4">1-qator, 5/6/7/8-ustun</td>
+                <td colspan="4">1-qator, 9/10/11/12-ustun</td>
             </tr>
+
             <tr>
-                <td> Juan </td>
-                <td> Dela Cruz </td>
-                <td> Filipino </td>
+                <td colspan="4">2-qator, 1/2/3/4-ustun</td>
+                <td colspan="4">2-qator, 5/6/7/8-ustun</td>
+                <td colspan="4">2-qator, 9/10/11/12-ustun</td>
             </tr>
         </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">3-qator, 1/2/3/4-ustun</td>
+                <td colspan="4">2-qator, 5/6/7/8-ustun</td>
+                <td colspan="4">3-qator, 9/10/11/12-ustun</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
-
 </html>
